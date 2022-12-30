@@ -5,3 +5,5 @@ build/
 gradle/
 /build
 /gradle
+
+out

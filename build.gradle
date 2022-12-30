@@ -35,13 +35,16 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
 
     // lombok
-    implementation 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
     // jpa
-    compileOnly 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     // h2
-    compileOnly 'com.h2database:h2'
+    implementation 'com.h2database:h2'
+
+    // mustache
+    implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
     // 여기 spring-boot-starter-test 에 junit5 가 포함되어있음 (springboot2.2.x 이후버전에는)
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -54,6 +57,9 @@ dependencies {
     testCompileOnly 'org.springframework.boot:spring-boot-starter-data-jpa'
     // test h2
     testCompileOnly 'com.h2database:h2'
+
+    // test mustache
+    testImplementation 'org.springframework.boot:spring-boot-starter-mustache'
 }
 
 dependencies {
