@@ -7,3 +7,5 @@ gradle/
 /gradle
 
 out
+application-oauth.properties
+/src/main/resources/application-oauth.properties
